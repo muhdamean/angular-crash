@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit()" >
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Name" />
+    </div>
+    <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" [(ngModel)]="email" placeholder="Email address" />
+    </div>
+    <div class="form-control">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" [(ngModel)]="subject" placeholder="Your subject" />
+    </div>
+    <div class="form-control">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" [(ngModel)]="address" placeholder="Your address" />
+    </div>
+    <div class="form-control">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" id="message" [(ngModel)]="message" placeholder="Your message here" rows="7"></textarea>
+    </div>
+    {{result}}
+    <input type="submit" value="Send Message" class="btn btn-block" />
+
+</form>
